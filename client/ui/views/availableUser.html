@@ -1,0 +1,18 @@
+<!-- display an individual user -->
+<template name="availableUser">
+	{{#if isMyUser _id}}
+		<div class="user_avatar">
+			<a href="#" class="list-group-item active">
+				(YOU) {{getUsername _id}}
+				<img src="/{{profile.avatar}}" class="avatar_img">
+			</a>
+		</div>
+	{{else}}
+		<div class="user_avatar">
+			<a href="/chat/{{_id}}" class="list-group-item">
+				{{getUsername _id}}
+				<img src="/{{profile.avatar}}" class="avatar_img">
+			</a>
+		</div>
+	{{/if}}
+</template>

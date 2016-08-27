@@ -1,0 +1,12 @@
+<!-- simple template that displays a message -->
+<template name="chatMessage">
+	<div class="">
+		<img src="/{{getAvatar owner}}" class="avatar_img">
+	 	{{getOwner owner}}:
+	</div>
+	<div class="chatmessage">
+	 	{{#emoji}}
+			{{text}}
+		{{/emoji}}
+	</div>
+</template>

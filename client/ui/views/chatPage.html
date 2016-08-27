@@ -1,0 +1,23 @@
+<!-- Top level template for the chat page -->
+<template name="chatPage">
+	<h2>Type in the box below to send a message!</h2>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well well-lg">
+				{{#each messages}}
+					 {{> chatMessage}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+		<div class="row">
+		<div class="col-md-12">
+			<form class="js-send-chat">
+				<input class="input" id="chbox" type="text" name="chat" placeholder="type a message here...">
+				<button class="btn btn-default">
+					<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+				</button>
+			</form>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,36 @@
+/* CSS declarations go here */
+.user_avatar{
+	height:50px;
+	width: 100%;
+	text-align: right;
+	padding: 20px;
+}
+.avatar_img{
+	height:25px;
+	width: 25px;
+}
+
+body{
+	padding-top: 60px;
+}
+.container{
+
+	border: 1px solid lightgray;
+	width: 700px;
+}
+
+/* Control the color of the navbar links text */
+.navbar .nav > li > a, .navbar .container-fluid .navbar-header > a{
+	color: white;
+}
+
+/* Control the bootstrap navbar height and background color */
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:13px !important;
+    padding-bottom:13px !important;
+    height: 50px;
+}
+.navbar{
+	background: #3b5998;
+	min-height:50px !important;
+}
